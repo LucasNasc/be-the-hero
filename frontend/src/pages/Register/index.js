@@ -25,8 +25,7 @@ const history = useHistory();
 
         try {
 
-            // const response = await api.post('/ongs', data);
-            const response = await api.get('https://coronavirus-19-api.herokuapp.com/countries');
+            const response = await api.post('/ongs', data);
 
             console.log(response.data);
 
